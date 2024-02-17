@@ -26,6 +26,7 @@ describe("Form", () => {
     // 入力した値が反映されてるか
     expect(screen.getByDisplayValue("Test Text")).toBeInTheDocument();
 
+    // submitをクリックした場合の挙動をテスト
     const button = screen.getByRole("button");
     await user.click(button);
     expect(alertSpy).toHaveBeenCalledWith("submitted: Test Text");
