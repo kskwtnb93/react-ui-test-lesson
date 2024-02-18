@@ -23,10 +23,10 @@ const Counter: React.FC<CounterProps> = ({ initialCount = 0 }) => {
     <div>
       <h2>Count: {count}</h2>
       <button
-        style={{
-          width: "50px",
-          borderRadius: "10px",
-        }}
+        // style={{
+        //   width: "50px",
+        //   borderRadius: "10px",
+        // }}
         onClick={decrement}
       >
         ー
